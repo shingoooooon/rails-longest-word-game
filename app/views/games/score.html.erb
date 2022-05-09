@@ -1,0 +1,11 @@
+<h1>Score</h1>
+
+<% if @ingrid && @english %>
+  <%= "Conglatulations! #{@word} is a valid English word!" %>
+<% elsif @english && @ingrid = false %>
+  <%= "Sorry but #{@word} can't be built our of #{@currentgrid}" %>
+<% else %>
+  <%= "Sorry but #{@word} does not seem to be a valid English word..." %>
+<% end %>
+
+<%= link_to 'New Game', new_path %>
