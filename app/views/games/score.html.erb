@@ -1,11 +1,14 @@
-<h1>Score</h1>
 
-<% if @ingrid && @english %>
-  <%= "Conglatulations! #{@word} is a valid English word!" %>
-<% elsif @english && @ingrid = false %>
-  <%= "Sorry but #{@word} can't be built our of #{@currentgrid}" %>
-<% else %>
-  <%= "Sorry but #{@word} does not seem to be a valid English word..." %>
-<% end %>
+<div class="container">
+  <h1>Result</h1>
 
-<%= link_to 'New Game', new_path %>
+  <% if @ingrid && @english %>
+    <p><%= "Conglatulations! #{@word} is a valid English word!" %></p>
+  <% elsif @english && @ingrid = false %>
+    <p><%= "Sorry but #{@word} can't be built our of #{@currentgrid}" %></p>
+  <% else %>
+    <p><%= "Sorry but #{@word} does not seem to be a valid English word..." %></p>
+  <% end %>
+
+  <%= link_to 'New Game', new_path %>
+</div>

@@ -1,13 +1,20 @@
+<div class="container">
+  <h1>Longest Word</h1>
+  <div class="letters">
+    <% @grid.each do |letter| %>
+      <div class="hexagon-wrapper">
+        <div class="hexagon">
+          <div class="letter"><%= letter %></div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 
-<h1>New Game!</h1>
-<% @grid.each do |letter| %>
-  <%= letter %>
-<% end %>
-
-<p>What is the longest word you can find?</p>
-<form action="/score" method="post">
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-  <%= hidden_field_tag :grid,@grid %>
-  <input type="text" name="word">
-  <input type="submit" value="play">
-</form>
+  <p>What is the longest word you can find?</p>
+  <form action="/score" method="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :grid,@grid %>
+    <input type="text" name="word" class="textbar">
+    <input type="submit" value="play" class="button">
+  </form>
+</div>
