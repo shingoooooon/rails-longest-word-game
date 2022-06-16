@@ -26,6 +26,7 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'sassc-rails'
 gem 'yui-compressor', '~> 0.12.0'
+gem 'java-properties', '~> 0.3.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false

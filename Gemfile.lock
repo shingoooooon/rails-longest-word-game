@@ -92,6 +92,7 @@ GEM
       activesupport (>= 5.0)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
+    java-properties (0.3.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
@@ -225,6 +226,7 @@ DEPENDENCIES
   bootstrap (~> 4.3.1)
   byebug
   capybara (>= 3.26)
+  java-properties (~> 0.3.0)
   jbuilder (~> 2.7)
   jquery-rails
   listen (~> 3.3)
